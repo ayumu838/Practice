@@ -1,6 +1,7 @@
 import re
 from time import sleep
-num = 10000
+import time
+num = 10000000
 
 def output(list,line_num = 5):
     n = 0
@@ -23,6 +24,8 @@ def main():
             primes.append(l[i])
             for j in range(i*2,num,l[i]):
                 l[j] = 'X'
-    output(primes,10)
 
+start_time = time.time()
 main()
+elapsed_time = time.time() - start_time
+print(elapsed_time)
