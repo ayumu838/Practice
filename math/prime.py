@@ -1,6 +1,6 @@
 import math
 import time
-num = 1000000000
+num = 10000000
 def is_prime(num):
     if num == 1:
         return False
